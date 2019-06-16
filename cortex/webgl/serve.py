@@ -4,7 +4,6 @@ import time
 import json
 import stat
 import email
-import Queue
 import struct
 import socket
 import logging
@@ -19,6 +18,7 @@ import tornado.ioloop
 import tornado.httpserver
 from tornado import websocket
 from tornado.web import HTTPError
+from queue import Queue
 
 cwd = os.path.split(os.path.abspath(__file__))[0]
 hostname = socket.gethostname()

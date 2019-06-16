@@ -11,6 +11,7 @@ import os
 import json
 import numpy as np
 
+from io import BytesIO
 from .. import dataset
 from .. import volume
 
@@ -64,8 +65,7 @@ class Package(object):
 
 def _pack_png(mosaic):
     from PIL import Image
-    import cStringIO
-    buf = cStringIO.StringIO()
+    buf = BytesIO()
     if mosaic.dtype not in (np.float32, np.uint8):
         raise TypeError
 
