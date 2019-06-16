@@ -6,6 +6,10 @@ scripts
 cortex/formats.c
 cortex/openctm.c
 
+# IDE
+.vscode/
+.idea/
+
 # Packages
 *.egg
 *.egg-info
