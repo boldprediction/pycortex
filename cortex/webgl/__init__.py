@@ -10,6 +10,7 @@ show = DocLoader("show", ".view", "cortex.webgl")
 
 make_static = DocLoader("make_static", ".view", "cortex.webgl")
 
+make_static_light = DocLoader("make_static_light", ".view", "cortex.webgl")
 #def make_static(*args, **kwargs):
 #    from . import view
 #    return view.make_static(*args, **kwargs)
