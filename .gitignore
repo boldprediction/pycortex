@@ -25,6 +25,8 @@ develop-eggs
 lib
 lib64
 
+!OpenCTM-1.0.3/lib
+
 # Cached files in filestore
 # NOTE: the filestore really should never be in the git repo... Needs work.
 filestore/db/*/cache
