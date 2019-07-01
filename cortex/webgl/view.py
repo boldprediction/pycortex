@@ -12,6 +12,8 @@ import webbrowser
 import numpy as np
 
 from queue import Queue
+from configparser import NoOptionError
+
 from tornado import web
 from .FallbackLoader import FallbackLoader
 
@@ -20,7 +22,6 @@ from ..database import db
 
 from . import serve
 from .data import Package
-from ConfigParser import NoOptionError
 
 try:
     cmapdir = options.config.get('webgl', 'colormaps')
