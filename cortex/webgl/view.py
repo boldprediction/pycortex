@@ -2,7 +2,6 @@ import os
 import glob
 import copy
 import json
-import Queue
 import shutil
 import random
 import functools
@@ -12,6 +11,7 @@ import threading
 import webbrowser
 import numpy as np
 
+from queue import Queue
 from tornado import web
 from .FallbackLoader import FallbackLoader
 
